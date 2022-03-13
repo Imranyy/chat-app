@@ -18,7 +18,7 @@ socket.on('chat', function(data){
   handle.value='',
   btn.style.display="none";
   feedback.innerHTML='',
-  output.innerHTML+='<p style="background-color:#282c34; font-family:cursive; color:#ebf0fc;min-height:600%; display:block;padding:10px 0 10px 10px;margin:20px 30px 0 30px;border-radius:12px;"><strong style="color:#61dafb;">'+data.handle+'  </strong><br/>'+data.message+'</p>';
+  output.innerHTML+='<div style="background-color:#282c34; font-family:cursive; color:#ebf0fc; height: fit-content; display:block;padding:10px 0 10px 10px;margin:20px 30px 0 30px;border-radius:12px;"><strong style="color:#61dafb;">'+data.handle+' : </strong><br/><p>'+data.message+'</p></div>';
 });
   
 message.addEventListener('keypress', function(){

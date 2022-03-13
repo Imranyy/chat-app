@@ -3,6 +3,7 @@
     font-family: 'Courier New', Courier, monospace;
 }
 body{
+    width: 100%;
      height: 100%;
      flex-direction: column;
      justify-items: center;
@@ -10,6 +11,8 @@ body{
 .output{
     background-color: #61dafb;
     margin-bottom: 16%;
+    width: 100%;
+    
 }
 #form{
     padding-top: 10px;
@@ -50,8 +53,57 @@ button {
     transition: 60ms;
 }
 button:hover{
-    height: 45px;
+   height: 45px;
    width: 140px;
    box-shadow: 2px 2px 1px 2px rgb(139, 139, 135);
     color: rgb(211, 189, 68);
+}
+@media all and (max-width:500px) ,(min-height:800px){
+    body{
+        width: fit-content;
+    }
+    .output{
+        width: 100%;
+       
+    }
+    #form{
+        padding-top: 0;
+        padding-left: 50px;
+        padding-bottom: 60px;
+        bottom: 0;
+        position: fixed;
+        background-color: #dff75c;
+        width: 100%;
+    }
+    input{
+        height: 35px;
+        width:80%;
+        font-size: large;
+        border-radius: 5px;
+        display: block;
+        margin-top: 5px;
+    }
+    textarea{
+        height: 17%;
+        width: 80%;
+        font-size: large;
+        border-radius: 5px;
+        display: block;
+        margin-top: 5px;
+    }
+    button {
+        display: none;
+        color: #61dafb;
+        background-color: #282c34;
+        font-size: large;
+        border: none;
+        border-radius: 12px;
+        height: 40px;
+        width: 130px;
+        margin-left: 90px;
+        margin-top: 5px;
+        cursor: pointer;
+        transition: 60ms;
+    }
+    
 }
