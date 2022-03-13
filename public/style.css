@@ -3,17 +3,34 @@
     font-family: 'Courier New', Courier, monospace;
 }
 body{
-     
+     height: 100%;
      flex-direction: column;
      justify-items: center;
 }
+.output{
+    background-color: #61dafb;
+    margin-bottom: 16%;
+}
 #form{
-    margin-left: 40px;
-    margin-top: 400px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-bottom: 60px;
+    bottom: 0;
+    position: fixed;
+    background-color: #dff75c;
+    width: 100%;
 }
 input{
-    height: 30px;
-    width: 250px;
+    height: 35px;
+    width:50%;
+    font-size: large;
+    border-radius: 5px;
+    display: block;
+    margin-top: 5px;
+}
+textarea{
+    height: 17%;
+    width: 50%;
     font-size: large;
     border-radius: 5px;
     display: block;

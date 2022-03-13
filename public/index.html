@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat App</title>
-   <script src="chat.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
     </head>
 <body>
    <div id="mario">
        <div id="chat-window">
-           <div id="output"></div>
+           <div class="output" id="output"></div>
            <div id="feedback"></div>
        </div>  
        <div id="form">
-        <input type="text" id="handle" placeholder="Handle"/>
-        <input type="text" placeholder="Message" id="message"/>
+        <input type="text" id="handle" placeholder="Handle" value="" required/>
+        <textarea type="text" placeholder="Message" id="message" value="" required></textarea>
         <button id="send">Send</button>
        </div>
    </div>
@@ -25,5 +24,6 @@
    //make connection
     var socket = io();
    </script> 
+    <script src="chat.js"></script>
 </body>
 </html>
