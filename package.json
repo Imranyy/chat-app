@@ -1,13 +1,11 @@
 {
-  "homepage": "https://imranyy.github.io/chat-app/",
   "name": "chat-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index",
-    "build": "react-scripts build"
+    "start": "nodemon index"
   },
   "author": "",
   "license": "ISC",
