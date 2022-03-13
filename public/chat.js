@@ -29,6 +29,6 @@ message.addEventListener('keypress', function(){
  })
  message.addEventListener('keypress', function(){
   socket.emit('typing',handle.value);
-  
+  btn.style.display="block";
  });
 
