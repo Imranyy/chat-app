@@ -1,6 +1,3 @@
-//make connection
-//import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
-var socket = io.connect();
 //query DOM
 const message=document.getElementById('message'),
  handle=document.getElementById('handle'),
@@ -9,7 +6,7 @@ const message=document.getElementById('message'),
  feedback=document.getElementById('feedback');
 //emit events
 //btn.addEventListener('click',function(){
-  //  socket.emit('chat',{message:message.value, handle:handle.value});
+  // socket.emit('chat',{message:message.value, handle:handle.value});
 //});
 //listen for events
 //socket.on('chat', function(data){
