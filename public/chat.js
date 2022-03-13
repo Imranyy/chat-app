@@ -16,6 +16,7 @@ btn.addEventListener('click',function(){
 socket.on('chat', function(data){
   message.value='',
   handle.value='',
+  btn.style.display="none";
   feedback.innerHTML='',
   output.innerHTML+='<p style="background-color:#282c34; font-family:cursive; color:#ebf0fc;min-height:600%; display:block;padding:10px 0 10px 10px;margin:20px 30px 0 30px;border-radius:12px;"><strong style="color:#61dafb;">'+data.handle+'  </strong><br/>'+data.message+'</p>';
 });
@@ -28,5 +29,6 @@ message.addEventListener('keypress', function(){
  })
  message.addEventListener('keypress', function(){
   socket.emit('typing',handle.value);
+  btn.style.display="block";
  });
 
